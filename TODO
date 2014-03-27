@@ -1,0 +1,99 @@
+there are some numbers in the view that must be dynamic. This functionality, Auto-Increment, needs to be a set up as a class.
+make each column in view clickable for editing.
+fix the overlap between view and add before continuing onto other database work
+mysql will need to be looked at for search and database creation, other database types should be based on the mysql structure.
+look seriously into powershell integration to handle printer integration in AD and users' credentials and web-application management.
+Permissions: Admin=>add,view,change,destroy; Manager=>Add,View,Request; Employee=>View.
+
+"'` Add and View have different hierarchies to them; add must display all available properties to be given to the entry, but display them as needed and use auto-incrementation for select duplicate fields set by the admin. View on the other hand is meant to show the basic information and present the extra information when it's necessary ie model field has more than one model, but the value of printer_amount is hidden until focused.
+
+===^^Rework ^^=====================
+
+
+Beta
+
+	I'm in beta right now, just testing it myself really doesn't feel like much of a beta, but it is what it is, since other people *can* use it.
+	
+	Create users - panel, login area, settings area
+
+	Optimize code for custom databases! *This is the kicker for 3.0*
+	- this will generate custom SQL for database creation.
+
+	! I was thinking about the implementation of custom databases and decided that there will be a `global` style database
+	+ The database will be called 'databases', nice and simple.
+	+ - Each database will contain global information about the table
+	+   . id, name, columns(, ...) => submit to table creation
+	+   . 	(generate columns set)
+	+   . take filled forms to generate table columns
+
+Structure
+	
+	Javascript
+	index: sets global
+	tabs: sets up header
+	add: handles default view; completely client-side
+	view: loads on tabs.tab.click depending on global; completely server-side
+	
+	PHP
+	index: calls everything, as usual
+	view_list: is located in php/ and needs to to be renamed to ../view.php
+	add_pages: needs to be renamed to add.php
+
+Future Implementations
+
+	I intend on version 3 having some legit features including: users with settings and restrictions, customized categories, export/import/convert SQL/XML/JSON, Email alerts for certain variable values, stand-alone package for offline mode - Qt wrapper with JSON/XML database.
+
+Bugs
+
+	a few things to note going in
+	* update fields are out of whack, those will be aligned with the columns...
+	* omitted fields in databases are untrackable. The default being used is 2 - set in php/getRows.php. I'm almost certain it doesn't matter if the bool field is longer than the number of values.
+	* selecting a dropdown field does not remove current view field. Maybe as simple as adding a css hidden.
+	* search needs to be disabled for now. It throws things off and is outdated.
+	* assets are still in need of an update.
+	* "omittedFields" will be a global variable - so right now it can stay hard-coded at a value of 2.
+	* "headerSetter.php" is still being used to reset tabs on category selection, but the javascript version still exists in its broken state - it's just commented out. This will be used to replace the PHP eventually.
+	
+	aesthetics 
+	* try and rework the width of the body at some point.
+	* figure out if the line between view and the footer is going or staying.
+	* Set up outline for the settings panel and figure out its location.
+	* make non-labeled fields clickable.
+	* get a jquery scrollbar in here.
+	* make drop-down scrollable for lengthy applications.
+
+Documentations
+
+	Users:
+	This inventory system aims to allow you to keep tabs on your inventory supply.
+	By clicking the downward arrow next to "Inventory" at the top right, you can select the appropriate category.
+	From there you will be taken to a page that will allow you to add more information to the database, or you can select the view tab on the top left.
+	The view tab shows you all of the information for the selected database, clicking on a field will allow you to edit the information.
+	When you edit the field you will notice the appearance of two buttons in the bottom right: Update, and Cancel.
+	By hovering over a row you'll see two buttons pop up at the end. The first is an update button, and the next is the removal button.
+	These buttons will only act on the according row. Update will tag each column in the row to be edited, while remove will remove the entire row.
+	If, by chance, you remove/edit/insert the wrong row you can check txt/log.txt for information on each query. This gives you some wiggle room for any life-threatening issues you may come up against.
+
+	Development:
+	This file is where I'm going to try and keep everything, but I've recreated this type of file a few times now.
+	I've kept a back-log of everything I've put into these todo type files if you want to go through it, I promise you it's a mess.
+	I have tried to keep comments up-to-date and frequent. There is no 'proper' documentation just yet, though there is documentation material scattered all throughout these files.
+	I will go through and compile everything eventually, but for now you can start here.
+
+Outline
+
+	file count: 21 files | +/- a few if they're not used
+
+	meta : pages.css | headers.css
+
+	main : index.php | index.css | index.js => category variable set
+
+	js : add.js | view.js
+
+	included : connect.php
+
+	php : getCols.php | getRows.php | headerSetter.php | checkIP.php |  uploadXML.php | updateXML.php | view_list.php(../view.php)
+
+	get : add_pages.php(add.php) | view_list.php(view.php)
+
+	set : updateXML.php | uploadXML.php

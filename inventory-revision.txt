@@ -1,0 +1,5 @@
+First and foremost: files need removed, cleaned, renamed, and sorted.
+A large subset of printers need to be added to the database so that there is information to build around
+there is still a small amount of work to be done for editing view entries.
+
+then the todo can be started again.

@@ -1,0 +1,224 @@
+Added - printer[id="01"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.10", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="02"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.11", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="03"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.12", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="04"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.13", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="05"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.14", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="06"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.15", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="07"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.16", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="08"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.17", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="09"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.18", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="10"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.19", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="11"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.20", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="12"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.21", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="13"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.22", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="14"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.23", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="15"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.24", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="16"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.25", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Added - printer[id="17"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.26", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 9:27am
+Updated - printer[id="01"] with model="Brother", toner="Brother", drum="Brother" on 07-16-2013 | 9:31am
+Updated - printer[id="02"] with model="Kyocera", toner="Kyocera", drum="Kyocera" on 07-16-2013 | 9:31am
+Updated - printer[id="03"] with model="Xerox", toner="Xerox", drum="Xerox" on 07-16-2013 | 9:31am
+Updated - printer[id="01"] with model="Brother", toner="Brother", drum="Brother" on 07-16-2013 | 9:32am
+Updated - printer[id="01"] with toner_replaced="2013-07-16", drum_replaced="2013-07-16" on 07-16-2013 | 9:32am
+Updated - printer[id="02"] with model="Kyocera", toner="Kyocera", drum="Kyocera" on 07-16-2013 | 9:32am
+Updated - printer[id="02"] with toner_replaced="2013-07-10", drum_replaced="2013-07-10" on 07-16-2013 | 9:32am
+Updated - printer[id="03"] with model="Xerox", toner="Xerox", drum="Xerox" on 07-16-2013 | 9:32am
+Updated - printer[id="03"] with toner_replaced="2013-05-20", drum_replaced="2013-05-20" on 07-16-2013 | 9:32am
+Added - printer[id="01"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.20", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="02"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.11", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="03"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.12", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="04"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.13", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="05"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.14", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="06"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.15", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="07"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.16", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="08"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.17", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="09"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.18", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="10"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.19", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="01"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.20", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="12"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.21", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="13"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.22", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="14"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.23", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="15"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.24", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="16"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.25", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="17"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.26", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:37am
+Added - printer[id="01"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.10", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:49am
+Added - printer[id="02"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.11", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:49am
+Added - printer[id="03"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.12", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:49am
+Added - printer[id="04"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.13", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:49am
+Added - printer[id="05"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.14", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:49am
+Added - printer[id="06"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.15", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:49am
+Added - printer[id="07"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.16", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:49am
+Added - printer[id="08"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.17", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:49am
+Added - printer[id="09"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.18", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:49am
+Added - printer[id="10"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.19", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:49am
+Added - printer[id="11"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.20", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:49am
+Added - printer[id="01"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.10", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:51am
+Added - printer[id="02"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.11", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:51am
+Added - printer[id="03"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.12", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:51am
+Added - printer[id="04"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.13", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:51am
+Added - printer[id="05"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.14", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:51am
+Added - printer[id="06"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.15", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:51am
+Added - printer[id="07"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.16", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:51am
+Added - printer[id="08"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.17", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:51am
+Added - printer[id="09"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.18", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:51am
+Added - printer[id="10"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.19", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:51am
+Added - printer[id="11"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.20", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:51am
+Added - printer[id="12"] with Model="New Model", Toner="New Toner", Drum="New Drum", IP="10.0.0.21", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:52am
+Added - printer[id="13"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.22", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:53am
+Added - printer[id="14"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.23", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:53am
+Added - printer[id="15"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.25", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:53am
+Added - printer[id="16"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:55am
+Added - printer[id="01"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.10", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:56am
+Added - printer[id="02"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.11", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:56am
+Added - printer[id="03"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.12", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:56am
+Added - printer[id="04"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.13", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:56am
+Added - printer[id="05"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.14", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:56am
+Added - printer[id="06"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.15", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:56am
+Added - printer[id="07"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.16", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:56am
+Added - printer[id="08"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.17", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:56am
+Added - printer[id="09"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.18", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:56am
+Added - printer[id="10"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.19", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:56am
+Added - printer[id="11"] with Model="New Model", Toner="New Toner", Drum="New Drum", IP="10.0.0.20", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:57am
+Added - printer[id="11"] with Model="New Model", Toner="Newer Toner", Drum="New Drum", IP="10.0.0.20", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:57am
+Added - printer[id="11"] with Model="New Model", Toner="New Toner", Drum="Newer Drum", IP="10.0.0.20", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:57am
+Added - printer[id="14"] with Model="Model", Toner="Toner", Drum="New Drum", IP="10.0.0.", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:58am
+Added - printer[id="14"] with Model="Model", Toner="Toner", Drum="New Drum", IP="10.0.0.", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:58am
+Added - printer[id="14"] with Model="Model", Toner="Toner", Drum="New Drum", IP="10.0.0.", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:58am
+Added - printer[id="17"] with Model="Model", Toner="Toner", Drum="New Drum", IP="10.0.0.55", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:59am
+Added - printer[id="18"] with Model="Model", Toner="Toner", Drum="New Drum", IP="10.0.0.56", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:59am
+Added - printer[id="19"] with Model="Model", Toner="Toner", Drum="New Drum", IP="10.0.0.57", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:59am
+Added - printer[id="20"] with Model="Model", Toner="Toner", Drum="New Drum", IP="10.0.0.58", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:59am
+Added - printer[id="21"] with Model="Model", Toner="Toner", Drum="New Drum", IP="10.0.0.59", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-16-2013 | 11:59am
+Updated - printer[id="01"] with toner="This is wayy to fucking long but it's a good test" on 07-16-2013 | 12:54pm
+Updated - printer[id="01"] with toner="This is wayy to fucking long but it's a good test" on 07-16-2013 | 12:55pm
+Updated - printer[id="01"] with toner="Toner" on 07-16-2013 | 12:55pm
+Updated - printer[id="01"] with drum="df" on 07-18-2013 | 9:06am
+Updated - printer[id="01"] with model="Quel", ip="10.0.0.101" on 07-18-2013 | 9:21am
+Updated - printer[id="01"] with model="Model", drum="Drum" on 07-18-2013 | 9:45am
+Updated - printer[id="01"] with model="Model", drum="Drum" on 07-18-2013 | 9:46am
+Updated - printer[id="01"] with toner_replaced="2013-07-18" on 07-18-2013 | 9:46am
+Updated - printer[id="01"] with toner="as" on 07-18-2013 | 10:42am
+Updated - printer[id="01"] with toner="as" on 07-18-2013 | 10:42am
+Updated - printer[id="01"] with toner="Toner" on 07-18-2013 | 10:42am
+Updated - printer[id="01"] with toner="as" on 07-18-2013 | 10:43am
+Updated - printer[id="01"] with toner="Toner" on 07-18-2013 | 10:43am
+Updated - toner_amount[model="something"] with amount="45" on 07-18-2013 | 10:52am
+Updated - drum_amount[drum="fd"] with amount="48" on 07-18-2013 | 10:52am
+Updated - printer[id="01"] with toner="something", drum="fd" on 07-18-2013 | 10:52am
+Updated - printer[id="01"] with toner="Toner", drum="Drum" on 07-18-2013 | 10:53am
+Updated - toner_amount[model="New Toner"] with amount="5" on 07-18-2013 | 10:53am
+Updated - printer[id="01"] with toner="New Toner" on 07-18-2013 | 10:53am
+Updated - toner_amount[model="Toner"] with amount="44" on 07-18-2013 | 11:07am
+Updated - toner_amount[model="New Toner"] with amount="6" on 07-18-2013 | 11:08am
+Updated - toner_amount[model="Toner"] with amount="44" on 07-18-2013 | 11:08am
+Updated - toner_amount[model="New Toner"] with amount="8" on 07-18-2013 | 11:09am
+Updated - printer[id="01"] with model="New Model", drum="New Drum", ip="10.0.0.112", drum_replaced="2013-07-18" on 07-18-2013 | 11:10am
+Updated - toner_amount[model="New Toner"] with amount="8" on 07-18-2013 | 11:10am
+Updated - printer[id="01"] with model="Model", toner="Toner", drum="Drum", ip="10.0.0.101" on 07-18-2013 | 11:12am
+Updated - toner_amount[model="Toner"] with amount="45" on 07-18-2013 | 11:12am
+Updated - drum_amount[drum="Drum"] with amount="47" on 07-18-2013 | 11:12am
+Updated - toner_amount[model="Toner"] with amount="46" on 07-18-2013 | 11:15am
+Updated - toner_amount[model="Toner"] with amount="48" on 07-18-2013 | 11:16am
+Updated - toner_amount[model="Toner"] with amount="46" on 07-18-2013 | 11:16am
+Updated - toner_amount[model="Toner"] with amount="77" on 07-18-2013 | 11:18am
+Updated - toner_amount[model="Toner"] with amount="22" on 07-18-2013 | 11:20am
+Updated - printer[id="01"] with model="New Model", toner="New Toner", drum="New Drum" on 07-18-2013 | 11:23am
+Updated - printer[id="01"] with model="Model", toner="Toner", drum="Drum" on 07-18-2013 | 11:24am
+Updated - toner_amount[model="Toner"] with amount="15" on 07-18-2013 | 11:24am
+Updated - drum_amount[drum="Drum"] with amount="15" on 07-18-2013 | 11:24am
+Removed - printer[id="02"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.11", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-18-2013 | 1:30pm
+Added - printer[id="22"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.11", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-18-2013 | 1:31pm
+Updated - toner_amount[model="New Toner"] with amount="77" on 07-18-2013 | 2:14pm
+Updated - drum_amount[drum="New Drum"] with amount="11" on 07-18-2013 | 2:14pm
+Added - printer[id="23"] with Model="Best Model NA", Toner="Some Great Toner", Drum="A Perfect Drum", IP="10.0.0.9001", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-18-2013 | 2:21pm
+Added - printer[id="01"] with Model="BK_Xerox4150", Toner="Toner", Drum="Drum", IP="10.0.0.139", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="02"] with Model="C_NA_Xerox4150", Toner="Toner", Drum="Drum", IP="10.0.0.141", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="03"] with Model="C_Bob", Toner="Toner", Drum="Drum", IP="10.0.0.142", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="04"] with Model="C_Xerox5325", Toner="Toner", Drum="Drum", IP="10.0.0.171", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="05"] with Model="C_LN_MICR", Toner="Toner", Drum="Drum", IP="10.0.0.172", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="06"] with Model="C_BK_5325", Toner="Toner", Drum="Drum", IP="10.0.0.175", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="07"] with Model="C_NA_4", Toner="Toner", Drum="Drum", IP="10.0.0.176", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="08"] with Model="MICR", Toner="Toner", Drum="Drum", IP="10.0.0.189", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="09"] with Model="C_LN_Kevin", Toner="Toner", Drum="Drum", IP="10.0.0.204", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="10"] with Model="C_LN_5370", Toner="Toner", Drum="Drum", IP="10.0.0.206", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="11"] with Model="C_LN_Label", Toner="Toner", Drum="Drum", IP="10.0.0.207", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="12"] with Model="C_LN_Fax", Toner="Toner", Drum="Drum", IP="10.0.0.208", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="13"] with Model="Postage Machine", Toner="Toner", Drum="Drum", IP="10.0.0.209", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="14"] with Model="C_Teller", Toner="Toner", Drum="Drum", IP="10.0.0.229", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="15"] with Model="Mboro", Toner="Toner", Drum="Drum", IP="10.0.0.233", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="16"] with Model="C_BK_FS1800+", Toner="Toner", Drum="Drum", IP="10.0.0.239", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="17"] with Model="C_LN_Processor", Toner="Toner", Drum="Drum", IP="10.0.0.203", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 07-19-2013 | 8:46am
+Added - printer[id="49"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.afs", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-25-2013 | 5:10pm
+Added - printer[id="50"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.afssdf", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-25-2013 | 5:10pm
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="" on : 08-25-2013 | 6:54pm
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="0000-00-00" on : 08-25-2013 | 6:55pm
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="0000-00-00" on : 08-25-2013 | 6:56pm
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="0000-00-00" on : 08-25-2013 | 6:56pm
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="0000-00-00" on : 08-25-2013 | 6:58pm
+Added - printer[id="51"] with Model="A Newer Model", Toner="Some Toner", Drum="A Drum", IP="10.0.0.4545", Toner Replaced="2013-06-06", and Drum Replaced="2013-06-15" on this date and time: 08-25-2013 | 6:59pm
+Added - paper[id="06"] with Type="Some new paper", Stock="About 49", Department="Loans", Timestamp="0000-00-00" on : 08-25-2013 | 6:59pm
+Added - server[id="0"] with Name="Name", Model="Model", HD="HDD", Ram="RAM", OS="OS", Version="Version", IP="10.0.0.asfe", Date="0000-00-00" on : 08-25-2013 | 7:51pm
+Added - server[id="0"] with Name="Name", Model="Model", HD="HDD", Ram="RAM", OS="OS", Version="Version", IP="10.0.0w344.", Date="0000-00-00" on : 08-25-2013 | 7:52pm
+Added - server[id="03"] with Name="Name", Model="Model", HD="HDD", Ram="RAM", OS="OS", Version="Version", IP="10.0.0aergfd.", Date="0000-00-00" on : 08-25-2013 | 7:53pm
+Added - server[id="Array"] with Name="Name", Model="Model", HD="HDD", Ram="RAM", OS="OS", Version="Version", IP="10.0.0.adfxvxc", Date="0000-00-00" on : 08-25-2013 | 7:54pm
+Added - server[id="Array"] with Name="Name", Model="Model", HD="HDD", Ram="RAM", OS="OS", Version="Version", IP="10.0.0.adfxvxc", Date="2020-00-00" on : 08-25-2013 | 7:55pm
+Added - workstation[id="01"] with Name="Name", Model="Model", HD="HDD", Ram="RAM", Version="Version", IP="10.0.0.34565", User="User", Extension="Extension", and Date="undefined" on : 08-25-2013 | 9:01pm
+Added - accessory[id="0"] with Category="Category", Type="Type", Length="Length", In_Stock="In_Stock", In_Use="In_Use" on : 08-25-2013 | 9:54pm
+Added - accessory[id="0"] with Category="Category", Type="Type", Length="Length", In_Stock="In_Stock", In_Use="In_Use" on : 08-25-2013 | 9:56pm
+Added - accessory[id="0"] with Category="Category", Type="Type", Length="Length", In_Stock="In_Stock", In_Use="In_Use" on : 08-25-2013 | 9:58pm
+Added - accessory[id="0"] with Category="Category", Type="Type", Length="Length", In_Stock="In_Stock", In_Use="In_Use" on : 08-25-2013 | 9:59pm
+Added - accessory[id="01"] with Category="Category", Type="Type", Length="Length", In_Stock="In_Stock", In_Use="In_Use" on : 08-25-2013 | 9:59pm
+Added - accessory[id="01"] with Category="Category", Type="Type", Length="Length", In_Stock="In_Stock", In_Use="In_Use" on : 08-25-2013 | 10:02pm
+Added - accessory[id="01"] with Category="Category", Type="Type", Length="Length", In_Stock="In_Stock", In_Use="In_Use" on : 08-25-2013 | 10:03pm
+Added - accessory[id="01"] with Category="Category", Type="Type", Length="Length", In_Stock="In_Stock", In_Use="In_Use" on : 08-25-2013 | 10:03pm
+Added - printer[id="52"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.345", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-25-2013 | 10:04pm
+Added - accessory[id="01"] with Category="Category", Type="Type", Length="Length", In_Stock="In_Stock", In_Use="In_Use" on : 08-25-2013 | 10:04pm
+Added - workstation[id="02"] with Name="Name", Model="Model", HD="HDD", Ram="RAM", Version="Version", IP="10.0.0.567", User="User", Extension="Extension", and Date="undefined" on : 08-25-2013 | 10:04pm
+Added - printer[id="53"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.xdf", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-25-2013 | 10:05pm
+Added - printer[id="54"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.adf", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-25-2013 | 10:06pm
+Added - printer[id="Array"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.qry", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-25-2013 | 10:07pm
+Added - printer[id="Array"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.mnbv", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-25-2013 | 10:07pm
+Added - printer[id="57"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.mnb54", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-25-2013 | 10:08pm
+Added - printer[id="58"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.mnb54fff", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-25-2013 | 10:09pm
+Added - printer[id="59"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.373573", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-25-2013 | 10:09pm
+Added - accessory[id="01"] with Category="Category", Type="Type", Length="Length", In_Stock="In_Stock", In_Use="In_Use" on : 08-25-2013 | 10:09pm
+Added - workstation[id="03"] with Name="Name", Model="Model", HD="HDD", Ram="RAM", Version="Version", IP="10.0.0.537", User="User", Extension="Extension", and Date="undefined" on : 08-25-2013 | 10:09pm
+Added - server[id="Array"] with Name="Name", Model="Model", HD="HDD", Ram="RAM", OS="OS", Version="Version", IP="10.0.057575.", Date="0000-00-00" on : 08-25-2013 | 10:10pm
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="0000-00-00" on : 08-25-2013 | 10:10pm
+Added - server[id="Array"] with Name="Name", Model="Model", HD="HDD", Ram="RAM", OS="OS", Version="Version", IP="10fadf.0.0.", Date="0000-00-00" on : 08-25-2013 | 10:11pm
+Added - server[id="07"] with Name="Name", Model="Model", HD="HDD", Ram="RAM", OS="OS", Version="Version", IP="10fadf.0.0.", Date="0000-00-00" on : 08-25-2013 | 10:11pm
+Updated - printer[id="03"] with model="adf" on 08-26-2013 | 11:31am
+Updated - printer[id="03"] with model="Updated" on 08-26-2013 | 11:31am
+Updated - printer[id="24"] with model="Update", toner="Update", ip="10.0.0.100" on 08-26-2013 | 5:46pm
+Removed - printer[id="04"] with Model="C_Xerox5325", Toner="Toner", Drum="Drum", IP="10.0.0.171", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-27-2013 | 10:38am
+Removed - printer[id="01"] with Model="BK_Xerox4150", Toner="Toner", Drum="Drum", IP="10.0.0.139", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 08-27-2013 | 1:58pm
+Updated - printer[id="02"] with model="Updated" on 08-28-2013 | 11:15am
+Updated - printer[id="05"] with model="ccccc" on 08-28-2013 | 12:59pm
+Updated - printer[id="05"] with model="Updated" on 08-28-2013 | 1:00pm
+Updated - printer[id="06"] with model="changed buttons" on 08-28-2013 | 1:03pm
+Updated - printer[id="06"] with model="Fixed" on 08-28-2013 | 1:10pm
+Updated - printer[id="04"] with model="asdf", drum="asdf", drum_replaced="sdf" on 08-28-2013 | 7:05pm
+Updated - printer[id="06"] with toner="asdf" on 08-28-2013 | 7:05pm
+Updated - toner_amount[model="Toner"] with amount="as" on 08-28-2013 | 7:05pm
+Updated - printer[id="09"] with drum="asdf" on 08-28-2013 | 7:05pm
+Updated - printer[id="10"] with ip="asdf", toner_replaced="asdf" on 08-28-2013 | 7:05pm
+Updated - printer[id="12"] with drum="asdf" on 08-28-2013 | 7:05pm
+Updated - printer[id="15"] with toner="asdf", drum="asdf", toner_replaced="asdf" on 08-28-2013 | 7:05pm
+Updated - printer[id="17"] with drum_replaced="asdf" on 08-28-2013 | 7:05pm
+Updated - drum_amount[drum="Drum"] with amount="as" on 08-28-2013 | 7:05pm
+Updated - printer[id="20"] with toner_replaced="asdf" on 08-28-2013 | 7:05pm
+Updated - printer[id="22"] with model="asdf", toner_replaced="adsf" on 08-28-2013 | 7:05pm
+Updated - toner_amount[model="Toner"] with amount="33" on 08-28-2013 | 7:06pm
+Updated - drum_amount[drum="Drum"] with amount="44" on 08-28-2013 | 7:06pm
+Removed - printer[id="01"] with Model="", Toner="", Drum="", IP="", Toner Replaced="", and Drum Replaced="" on this date and time: 09-04-2013 | 9:31am
+Added - printer[id="20"] with Model="Model", Toner="Toner", Drum="Drum", IP="10.0.0.", Toner Replaced="2013-01-01", and Drum Replaced="2013-01-01" on this date and time: 02-12-2014 | 2:16pm
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="0000-00-00" on : 02-20-2014 | 10:50am
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="0000-00-00" on : 02-20-2014 | 10:50am
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="0000-00-00" on : 02-20-2014 | 10:50am
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="0000-00-00" on : 02-20-2014 | 10:50am
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="0000-00-00" on : 02-20-2014 | 10:50am
+Added - paper[id="01"] with Type="Type", Stock="Stock", Department="Department", Timestamp="0000-00-00" on : 02-20-2014 | 10:50am
+Updated - printer[id="01"] with model="asdf" on 03-18-2014 | 2:48pm
+Updated - printer[id="01"] with model="asdf" on 03-18-2014 | 2:48pm
+Updated - printer[id="01"] with model="Kyocera" on 03-18-2014 | 2:49pm
+Updated - printer[id="01"] with model="Kyocera" on 03-18-2014 | 2:49pm
