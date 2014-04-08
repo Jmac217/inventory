@@ -1,3 +1,20 @@
+<?php /*******************************************************
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+********************************************************** */?>
+
 <?php include 'php/connect.php';
 
 echo "<script type='text/javascript' src='js/view.js'></script>";
@@ -113,8 +130,8 @@ if (isset($_POST['category'])){
 										<input id='4' class='view_printer_desk_update view_printer_field_update_input' alt='".$row['desk']."' value='".$row['desk']."'/>
 										<input id='5' class='view_printer_ip_update view_printer_field_update_input' alt='".$row['ip']."' value='".$row['ip']."'/>
 										<input id='6' class='view_printer_toner_type_update view_printer_field_update_input' alt='".$row['toner_type']."' value='".$row['toner_type']."'/>
-										<input id='7' class='view_printer_toner_amount_update' maxlength='2' alt='".$row['toner_amount']."' value='".$row['toner_amount']."'/>
-										<input id='8' class='view_printer_drum_type_update view_printer_field_update_input' alt='".$row['drum_type']."' value='".$row['drum_type']."'/>
+										<input id='7' class='view_printer_drum_type_update view_printer_field_update_input' alt='".$row['drum_type']."' value='".$row['drum_type']."'/>
+										<input id='8' class='view_printer_toner_amount_update' maxlength='2' alt='".$row['toner_amount']."' value='".$row['toner_amount']."'/>
 										<input id='9' class='view_printer_drum_amount_update' maxlength='2' alt='".$row['drum_amount']."' value='".$row['drum_amount']."'/>
 										<input id='10' class='view_printer_toner_replaced_update view_printer_field_update_input' alt='".$toner_replaced."' value='".$toner_replaced."'/>
 										<input id='11' class='view_printer_drum_replaced_update view_printer_field_update_input' alt='".$drum_replaced."' value='".$drum_replaced."'/>

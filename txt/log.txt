@@ -222,3 +222,22 @@ Updated - printer[id="01"] with model="asdf" on 03-18-2014 | 2:48pm
 Updated - printer[id="01"] with model="asdf" on 03-18-2014 | 2:48pm
 Updated - printer[id="01"] with model="Kyocera" on 03-18-2014 | 2:49pm
 Updated - printer[id="01"] with model="Kyocera" on 03-18-2014 | 2:49pm
+Added - printer[id="02"] with Model="asdf", Name="asdf", Network="asdf", Branch="asdf", Desk="asdf", IP="10.0.0.asdf", Toner_Type="asdf", Drum_Type="asdf", Toner_amount="", Drum_Amount="", Toner_Replaced="undefined-undefined-undefined", Drum_Replaced="undefined-undefined-undefined", Printer_Amount="asdf", Maintenance_Date="undefined-undefined-undefined" on this date and time: 04-08-2014 | 10:41am
+Updated - printer[id="02"] with model="c", name="c", network="c", branch="c", desk="c", ip="c", toner_type="c", drum_type="c", toner_replaced="2014-05-05", drum_replaced="2014-05-05", printer_amount="", maintenance_date="" on 04-08-2014 | 11:51am
+Updated - printer[id="02"] with model="6", name="6", network="6", branch="6", desk="6", ip="6", toner_type="6", drum_type="6", toner_replaced="2014-03-03", drum_replaced="2014-03-03", printer_amount="6", maintenance_date="2014-03-03" on 04-08-2014 | 12:05pm
+Updated - printer[id="02"] with model="5", desk="6" on 04-08-2014 | 12:05pm
+Updated - printer[id="02"] with name="4" on 04-08-2014 | 12:06pm
+Updated - printer[id="02"] with name="4" on 04-08-2014 | 12:07pm
+Updated - printer[id="02"] with model="1", name="1", network="1", branch="1", desk="1", ip="1", toner_type="1", drum_type="1", toner_replaced="2014-02-02", drum_replaced="2014-02-02", printer_amount="1", maintenance_date="2014-02-02" on 04-08-2014 | 12:08pm
+Updated - printer[id="02"] with model="4", name="4", network="4", branch="4", desk="4", ip="4", toner_type="4", drum_type="4", toner_replaced="2014-01-01", drum_replaced="2014-01-01", printer_amount="4", maintenance_date="2014-01-01" on 04-08-2014 | 12:18pm
+Updated - printer[id="02"] with model="3", desk="4" on 04-08-2014 | 12:56pm
+Updated - printer[id="02"] with name="2" on 04-08-2014 | 12:56pm
+Updated - printer[id="02"] with network="3" on 04-08-2014 | 12:57pm
+Updated - printer[id="02"] with ip="5" on 04-08-2014 | 12:57pm
+Updated - printer[id="02"] with toner_type="6" on 04-08-2014 | 12:57pm
+Updated - printer[id="02"] with drum_type="7" on 04-08-2014 | 12:58pm
+Updated - printer[id="02"] with toner_replaced="2014-02-02" on 04-08-2014 | 12:58pm
+Updated - printer[id="02"] with drum_replaced="2014-02-02" on 04-08-2014 | 12:59pm
+Updated - printer[id="02"] with printer_amount="5" on 04-08-2014 | 12:59pm
+Updated - printer[id="02"] with maintenance_date="2014-02-02" on 04-08-2014 | 12:59pm
+Updated - printer[id="02"] with model="1", name="1", network="1", branch="1", desk="1", ip="1", toner_type="1", drum_type="1", toner_replaced="1", drum_replaced="1", printer_amount="1", maintenance_date="1" on 04-08-2014 | 1:02pm

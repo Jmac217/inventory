@@ -1,3 +1,20 @@
+<?/*******************************************************
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+***********************************************************/?>
+
 <?php include 'connect.php';
 // this file will probably be moved into uploadXML.php
 
@@ -23,25 +40,37 @@ if (isset($_POST['update_xml'])){
 		
 			case 'printer':
 
-				$id = $row['id']; // get this model
-				$model_value = $row->model->value; // get this model
-				$toner_value = $row->toner->value; // get this toner
-				$toners_value = $row->toner_amount->value; // get this toner amount
-				$drum_value = $row->drum->value; // get this drum
-				$drums_value = $row->drum_amount->value; // get this drum amount
-				$ip_value = $row->ip->value; // get this ip
-				$toner_replaced_value = $row->toner_replaced->value; // get this toner_replaced
-				$drum_replaced_value = $row->drum_replaced->value; // get this drum_replaced
-				$model_bool = $row->model->bool; // get this model
-				$toner_bool = $row->toner->bool; // get this toner
-				$toners_bool = $row->toner_amount->bool; // get this toner amount
-				$drum_bool = $row->drum->bool; // get this drum
-				$drums_bool = $row->drum_amount->bool; // get this drum amount 
-				$ip_bool = $row->ip->bool; // get this ip
+				$id = $row['id']; // get this row_id value
+				$model_value = $row->model->value; // get this model value
+				$name_value = $row->name->value; // get this name value
+				$network_value = $row->network->value; // get this network value
+				$branch_value = $row->branch->value; // get this branch value
+				$desk_value = $row->desk->value; // get this desk value
+				$ip_value = $row->ip->value; // get this ip value
+				$toner_type_value = $row->toner_type->value; // get this toner_type value
+				$drum_type_value = $row->drum_type->value; // get this drum_type value
+				$toner_amount_value = $row->toner_amount->value; // get this toner_amount value
+				$drum_amount_value = $row->drum_amount->value; // get this drum_amount value
+				$toner_replaced_value = $row->toner_replaced->value; // get this toner_replaced value
+				$drum_replaced_value = $row->drum_replaced->value; // get this drum_replaced value
+				$printer_amount_value = $row->printer_amount->value; // get this printer_amount value
+				$maintenance_date_value = $row->maintenance_date->value; // get this maintenance_date value
+				$model_bool = $row->model->bool; // get this model bool
+				$name_bool = $row->name->bool; // get this name bool
+				$network_bool = $row->network->bool; // get this network bool
+				$branch_bool = $row->branch->bool; // get this branch bool
+				$ip_bool = $row->ip->bool; // get this ip bool
+				$desk_bool = $row->model->bool; // get this model bool
+				$toner_type_bool = $row->toner_type->bool; // get this toner_type bool
+				$toner_amount_bool = $row->toner_amount->bool; // get this toner_amount bool
+				$drum_type_bool = $row->drum_type->bool; // get this drum_type bool
+				$drum_amount_bool = $row->drum_amount->bool; // get this drum_amount bool
 				$toner_replaced_bool = $row->toner_replaced->bool; // get this toner_replaced
 				$drum_replaced_bool = $row->drum_replaced->bool; // get this drum_replaced
-				
-				$debug = $id.': '.$model_value.' => '.$model_bool.', '.$toner_value.' => '.$toner_bool.', '.$drum_value.' => '.$drum_bool.', '.$ip_value.' => '.$ip_bool.', '.$toner_replaced_value.' => '.$toner_replaced_bool.', '.$drum_replaced_value.' => '.$drum_replaced_bool.'<br />';
+				$printer_amount_bool = $row->printer_amount->bool; // get this printer_amount bool
+				$maintenance_date_bool = $row->maintenance_date->bool; // get this maintenance_date bool
+
+				echo $debug = $id.': '.$model_value.' => '.$model_bool.', '.$name_value.' => '.$name_bool.', '.$network_value.' => '.$network_bool.', '.$branch_value.' => '.$branch_bool.', '.$desk_value.' => '.$desk_bool.', '.$ip_value.' => '.$ip_bool.', '.$toner_type_value.' => '.$toner_type_bool.', '.$drum_type_value.' => '.$drum_type_bool.', '.$toner_replaced_value.' => '.$toner_replaced_bool.', '.$drum_replaced_value.' => '.$drum_replaced_bool.', '.$printer_amount_value.' => '.$printer_amount_bool.', '.$maintenance_date_value.' => '.$maintenance_date_bool.'<br />';
 
 				// update this database row with these values
 				
@@ -59,12 +88,30 @@ if (isset($_POST['update_xml'])){
 				if ($model_bool == '1'){
 					$model = 'model="'.$model_value.'"';
 				}else{$model = NULL;}
-				if ($toner_bool == '1'){
-					$toner = 'toner="'.$toner_value.'"';
-				}else{$toner = NULL;}
-				if ($drum_bool == '1'){
-					$drum = 'drum="'.$drum_value.'"';
-				}else{$drum = NULL;}
+				if ($name_bool == '1'){
+					$name = 'name="'.$name_value.'"';
+				}else{$name = NULL;}
+				if ($network_bool == '1'){
+					$network = 'network="'.$network_value.'"';
+				}else{$network = NULL;}
+				if ($branch_bool == '1'){
+					$branch = 'branch="'.$branch_value.'"';
+				}else{$branch = NULL;}
+				if ($desk_bool == '1'){
+					$desk = 'desk="'.$desk_value.'"';
+				}else{$branch = NULL;}
+				if ($toner_type_bool == '1'){
+					$toner_type = 'toner_type="'.$toner_type_value.'"';
+				}else{$toner_type = NULL;}
+				if ($drum_type_bool == '1'){
+					$drum_type = 'drum_type="'.$drum_type_value.'"';
+				}else{$drum_type = NULL;}				
+				if($toner_amount_bool == '1'){
+					$toner_amount = 'toner_amount="'.$toner_amount_value.'"';
+				}else{$toner_amount = NULL;}
+				if($drum_amount_bool == '1'){
+					$drum_amount = 'drum_amount="'.$drum_amount_value.'"';
+				}else{$drum_amount = NULL;}
 				if ($ip_bool == '1'){
 					$ip = 'ip="'.$ip_value.'"';
 				}else{$ip = NULL;}
@@ -74,14 +121,15 @@ if (isset($_POST['update_xml'])){
 				if ($drum_replaced_bool == '1'){
 					$drum_replaced = 'drum_replaced="'.$drum_replaced_value.'"';
 				}else{$drum_replaced = NULL;}
+				if ($printer_amount_bool == '1'){
+					$printer_amount = 'printer_amount="'.$printer_amount_value.'"';
+				}else{$printer_amount = NULL;}
+				if ($maintenance_date_bool == '1'){
+					$maintenance_date = 'maintenance_date="'.$maintenance_date_value.'"';
+				}else{$maintenance_date = NULL;}
+
 				
 				// dynamically set up another query string for amounts
-				if($toners_bool == '1'){
-					$toners = 'amount="'.$toners_value.'"';
-				}else{$toners = NULL;}
-				if($drums_bool == '1'){
-					$drums = 'amount="'.$drums_value.'"';
-				}else{$drums = NULL;}
 				
 				// DEBUG
 				//echo $toner_value.' => '.$toners.'; Update?:'.$toners_bool.' | ';
@@ -102,43 +150,85 @@ if (isset($_POST['update_xml'])){
 				// set file to be globally logged
 				$file = fopen('../txt/log.txt', 'a');
 				
-				if (isset($model)||isset($toner)||isset($drum)||isset($ip)||isset($toner_replaced)||isset($drum_replaced)){
-					// then it moves on to check each individual value against the previous, like a factorial, and appends a comma onto the end of the previous value if it exists.
-					if (isset($toner)){
+				if (isset($model)||isset($name)||isset($network)||isset($branch)||isset($desk)||isset($ip)||isset($toner_type)||isset($drum_type)||isset($toner_amount)||isset($drum_amount)||isset($toner_replaced)||isset($drum_replaced)||isset($printer_amount)||isset($maintenance_date)){
+					// Then it moves on to check each individual value against the previous, like a factorial, and appends a comma onto the end of the previous value if it exists.
+					// Obviously there has to be a better way, but for now I'm leaving it like this.
+					if (isset($name)){
 						if(isset($model)){
 							$model .= ', ';
 						}
 					}
-					if (isset($drum)){
-						if(isset($toner)||isset($model)){
-							$toner .= ', ';
+					if (isset($network)){
+						if(isset($name)||isset($model)){
+							$name .= ', ';
+						}
+					}
+					if (isset($branch)){
+						if(isset($network)||isset($name)||isset($model)){
+							$network .= ', ';
+						}
+					}
+					if (isset($desk)){
+						if(isset($branch)||isset($network)||isset($name)||isset($model)){
+							$branch .= ', ';
 						}
 					}
 					if (isset($ip)){
-						if(isset($drum)||isset($toner)||isset($model)){
-							$drum .= ', ';
+						if(isset($desk)||isset($branch)||isset($network)||isset($name)||isset($model)){
+							$desk .= ', ';
 						}
 					}
-					if (isset($toner_replaced)){
-						if(isset($ip)||isset($drum)||isset($toner)||isset($model)){
+					if (isset($toner_type)){
+						if(isset($ip)||isset($desk)||isset($branch)||isset($network)||isset($name)||isset($model)){
 							$ip .= ', ';
 						}
 					}
+					if (isset($drum_type)){
+						if(isset($toner_type)||isset($ip)||isset($desk)||isset($branch)||isset($network)||isset($name)||isset($model)){
+							$toner_type .= ', ';
+						}
+					}
+					if (isset($toner_amount)){
+						if(isset($drum_type)||isset($toner_type)||isset($ip)||isset($desk)||isset($branch)||isset($network)||isset($name)||isset($model)){
+							$drum_type .= ', ';
+						}
+					}
+					if (isset($drum_amount)){
+						if(isset($toner_amount)||isset($drum_type)||isset($toner_type)||isset($ip)||isset($desk)||isset($branch)||isset($network)||isset($name)||isset($model)){
+							$toner_amount .= ', ';
+						}
+					}
+					if (isset($toner_replaced)){
+						if(isset($drum_amount)||isset($toner_amount)||isset($drum_type)||isset($toner_type)||isset($ip)||isset($desk)||isset($branch)||isset($network)||isset($name)||isset($model)){
+							$drum_amount .= ', ';
+						}
+					}
 					if (isset($drum_replaced)){
-						if(isset($toner_replaced)||isset($ip)||isset($drum)||isset($toner)||isset($model)){
+						if(isset($toner_replaced)||isset($drum_amount)||isset($toner_amount)||isset($drum_type)||isset($toner_type)||isset($ip)||isset($desk)||isset($branch)||isset($network)||isset($name)||isset($model)){
 							$toner_replaced .= ', ';
 						}
 					}
-					$query = 'UPDATE printer SET '.$model.$toner.$drum.$ip.$toner_replaced.$drum_replaced.' WHERE id="'.$id.'"';
+					if (isset($printer_amount)){
+						if(isset($drum_replaced)||isset($toner_replaced)||isset($drum_amount)||isset($toner_amount)||isset($drum_type)||isset($toner_type)||isset($ip)||isset($desk)||isset($branch)||isset($network)||isset($name)||isset($model)){
+							$drum_replaced .= ', ';
+						}
+					}
+					if (isset($maintenance_date)){
+						if(isset($printer_amount)||isset($drum_replaced)||isset($toner_replaced)||isset($drum_amount)||isset($toner_amount)||isset($drum_type)||isset($toner_type)||isset($ip)||isset($desk)||isset($branch)||isset($network)||isset($name)||isset($model)){
+							$printer_amount .= ', ';
+						}
+					}
+					echo $query = 'UPDATE printer SET '.$model.$name.$network.$branch.$desk.$ip.$toner_type.$drum_type.$toner_replaced.$drum_replaced.$printer_amount.$maintenance_date.' WHERE id="'.$id.'"';
 					mysql_query($query)or die(mysql_error());
 					
 					// Write Log
 					if($id<10){$id = '0'.$id;}// just cleaner
-					$log = 'Updated - printer[id="'.$id.'"] with '.$model.$toner.$drum.$ip.$toner_replaced.$drum_replaced.' on '.date('m-d-Y').' | '.date('g:ia');
+					$log = 'Updated - printer[id="'.$id.'"] with '.$model.$name.$network.$branch.$desk.$ip.$toner_type.$drum_type.$toner_replaced.$drum_replaced.$printer_amount.$maintenance_date.' on '.date('m-d-Y').' | '.date('g:ia');
 					fwrite($file, $log."\n");
 					
 				}else{echo ' Row: '.$id.' not set.';}	
 					
+				/* THIS FUNCTIONALITY HAS BEEN DEPRICATED AND MERGED INTO THE PRINTER DATABASE
 				if (isset($toners)){
 					// there needs to be a check here to see if this model is already in the database, if it's not then maybe add it, but probably just disregard the change.
 					// - same for the drums
@@ -158,6 +248,7 @@ if (isset($_POST['update_xml'])){
 				}
 				// close global log
 				fclose($file);
+				*/
 				
 			break; // printer
 			case 'paper':

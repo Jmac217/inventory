@@ -1,3 +1,20 @@
+<?/*******************************************************
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+***********************************************************/?>
+
 <?php include 'connect.php'; // shebang!
 // for each printer in xml, collect variables and insert them.
 $xml = $_POST['xml'];
@@ -26,7 +43,7 @@ switch ($category){
 			$name = $printer->name;
 			$network = $printer->network;
 			$branch = $printer->branch;
-			$desk = $printer->desk;
+			echo $desk = $printer->desk;
 			$ip = $printer->ip; // get this ip
 			$toner_type = $printer->toner_type; // get this toner
 			$drum_type = $printer->drum_type; // get this drum

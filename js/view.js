@@ -1,3 +1,20 @@
+/*******************************************************
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+***********************************************************/
+
 $(document).ready(function(){
 
 	// JSON globals
@@ -148,13 +165,19 @@ $(document).ready(function(){
 				// :NOTICE: That "toner" versus the "toners"
 
 				col_values.push($(this).children('.view_printer_model').text());
-				col_values.push($(this).children('.view_toner_hover').children('.view_printer_toner').text());
-				col_values.push($(this).children('.view_toner_hover').children('.view_printer_toners').text());
-				col_values.push($(this).children('.view_drum_hover').children('.view_printer_drum').text());
-				col_values.push($(this).children('.view_drum_hover').children('.view_printer_drums').text());
+				col_values.push($(this).children('.view_printer_name').text());
+				col_values.push($(this).children('.view_printer_network').text());
+				col_values.push($(this).children('.view_printer_branch').text());
+				col_values.push($(this).children('.view_printer_desk').text());
 				col_values.push($(this).children('.view_printer_ip').text());
+				col_values.push($(this).children('.view_printer_toner_type').text());
+				col_values.push($(this).children('.view_printer_drum_type').text());
+				col_values.push($(this).children('.view_printer_toner_amount').text());
+				col_values.push($(this).children('.view_printer_drum_amount').text());
 				col_values.push($(this).children('.view_printer_toner_replaced').text());
 				col_values.push($(this).children('.view_printer_drum_replaced').text());
+				col_values.push($(this).children('.view_printer_printer_amount').text());
+				col_values.push($(this).children('.view_printer_maintenance_date').text());
 				// get this row's columns' bools
 				// set bools default values to 0 because they're unedited
 				for (var i=0;i<=col_cap;i++){
@@ -187,12 +210,12 @@ $(document).ready(function(){
 				var row_id = String($(this).parent().attr('row_id'));// can be passed in post to PHP files
 				// get this col_id
 				var col_id = $(this).attr('id');
-				// set this span to hidden
+				// set this span to hidden to replace with the update
 				$(this).css({'visibility':'hidden'});
 				// show buttons
 				$('#view_printer_update').css({'visibility':'visible'});
 				$('#view_printer_cancel').css({'visibility':'visible'});
-				// set this input to visible and select it's contents then call a blur function // used to be a mouseleave function
+				// set this input to visible and select its contents then call a blur function // used to be a mouseleave function
 				// so hierarchical structure in command line listing is as follows (Warning: it's a little messy): ~/.view_printer_model: ../.view_printer_field/.view_printer_field_update/.view_printer_model_update/*
 				$(this).parent().children('.view_printer_field_update').children('.view_printer_model_update').css({'visibility':'visible'}).select().blur(function(){// that parent's other grandchildren need to shut up when she leaves...
 					// if value = alt then display original, otherwise leave the box for update // set model_update boolean to true, and otherwise return to false. // if this field has been blanked, then return the original value, and also later reset the update variable.
@@ -220,115 +243,117 @@ $(document).ready(function(){
 					// select when clicked
 					$(this).select();
 				});
-			}).siblings('.view_toner_hover').mouseover(function(){ // siblings just selects a seperate child from the same parent. It's really cool.
-				// if boolean is equal to 0 then show the number, but otherwise just do leave the updating window open.
-				if (flags.row[$(this).parent().attr('row_id')].columns.bools[$(this).children('.view_printer_toners').attr('id')] == '0'){
-					$(this).children('.view_printer_toners').css({'visibility':'visible'});
-				}
-				// there is an extra level of depth in this block since there are two divs inside of .view_toner_hover. These two divs are .view_printer_toner, and .view_printer_toners.
-				$(this).children('.view_printer_toners').click(function(){
-					var row_id = String($(this).parent().parent().attr('row_id'));
-					var col_id = $(this).attr('id');
-					$(this).css({'visibility':'hidden'});			
-					$('#view_printer_update').css({'visibility':'visible'});
-					$('#view_printer_cancel').css({'visibility':'visible'});
-					$(this).parent().parent().children('.view_printer_field_update').children('.view_printer_toners_update').css({'visibility':'visible'}).select().blur(function(){
-						if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
-						if ($(this).val() == $(this).attr('alt')){
-							$(this).css({'visibility':'hidden'});
-							$('#view_printer_update').css({'visibility':'hidden'});
-							$('#view_printer_cancel').css({'visibility':'hidden'});
-							$(this).parent().parent().children('.view_toner_hover').children('.view_printer_toners').css({'visibility':'hidden'});
-							flags.row[row_id].columns.values[col_id] = $(this).val();
-							flags.row[row_id].columns.bools[col_id] = '0';
-							getJSON();
-						}else{
-							flags.row[row_id].columns.values[col_id] = $(this).val();
-							flags.row[row_id].columns.bools[col_id] = '1';
-							getJSON();
-						}
-					}).click(function(){
-						$(this).select();
-					});
-				});
-			}).mouseout(function(){
-				$(this).children('.view_printer_toners').css({'visibility':'hidden'});
-			}).children('.view_printer_toner').click(function(){
-				var row_id = $(this).parent().parent().attr('row_id');
+			}).siblings('.view_printer_toner_amount').click(function(){
+				var row_id = String($(this).parent().attr('row_id'));
 				var col_id = $(this).attr('id');
-				$(this).css({'visibility':'hidden'});
+				$(this).css({'visibility':'hidden'});			
 				$('#view_printer_update').css({'visibility':'visible'});
 				$('#view_printer_cancel').css({'visibility':'visible'});
-				$(this).parent().parent().children('.view_printer_field_update').children('.view_printer_toner_update').css({'visibility':'visible'}).select().blur(function(){
+				$(this).parent().children('.view_printer_field_update').children('.view_printer_toner_amount_update').css({'visibility':'visible'}).select().blur(function(){
 					if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
 					if ($(this).val() == $(this).attr('alt')){
 						$(this).css({'visibility':'hidden'});
 						$('#view_printer_update').css({'visibility':'hidden'});
 						$('#view_printer_cancel').css({'visibility':'hidden'});
-						$(this).parent().parent().children('.view_toner_hover').children('.view_printer_toner').css({'visibility':'visible'});
+						$(this).parent().parent().children('.view_printer_toner_amount').css({'visibility':'visible'});
 						flags.row[row_id].columns.values[col_id] = $(this).val();
 						flags.row[row_id].columns.bools[col_id] = '0';
 						getJSON();
 					}else{
 						flags.row[row_id].columns.values[col_id] = $(this).val();
-						flags.row[row_id].columns.bools[col_id] = '1';		
-						getJSON();					
+						flags.row[row_id].columns.bools[col_id] = '1';
+						getJSON();
 					}
 				}).click(function(){$(this).select();});
-			}).parent().siblings('.view_drum_hover').mouseover(function(){
-				if (flags.row[$(this).parent().attr('row_id')].columns.bools[$(this).children('.view_printer_drums').attr('id')] == '0'){
-					$(this).children('.view_printer_drums').css({'visibility':'visible'});
-				}
-				$(this).children('.view_printer_drums').click(function(){
-					var row_id = String($(this).parent().parent().attr('row_id'));
-					var col_id = $(this).attr('id');
-					$('#view_printer_update').css({'visibility':'visible'});
-					$('#view_printer_cancel').css({'visibility':'visible'});
-					$(this).css({'visibility':'hidden'});
-					$(this).parent().parent().children('.view_printer_field_update').children('.view_printer_drums_update').css({'visibility':'visible'}).select().blur(function(){
-						if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
-						if ($(this).val() == $(this).attr('alt')){
-							$(this).css({'visibility':'hidden'});
-							$('#view_printer_update').css({'visibility':'hidden'});
-							$('#view_printer_cancel').css({'visibility':'hidden'});
-							$(this).parent().parent().children('.view_drum_hover').children('.view_printer_drums').css({'visibility':'hidden'});
-							flags.row[row_id].columns.values[col_id] = $(this).val();
-							flags.row[row_id].columns.bools[col_id] = '0';
-							getJSON();
-						}else{
-							flags.row[row_id].columns.values[col_id] = $(this).val();
-							flags.row[row_id].columns.bools[col_id] = '1';
-							getJSON();
-						}
-					}).click(function(){
-						$(this).select();
-					});
-				});
-			}).mouseout(function(){
-				$(this).children('.view_printer_drums').css({'visibility':'hidden'});
-			}).children('.view_printer_drum').click(function(){
-				var row_id = $(this).parent().parent().attr('row_id');
+			}).siblings('.view_printer_name').click(function(){
+				var row_id = String($(this).parent().attr('row_id'));
 				var col_id = $(this).attr('id');
-				$(this).css({'visibility':'hidden'});
+				$(this).css({'visibility':'hidden'});			
 				$('#view_printer_update').css({'visibility':'visible'});
 				$('#view_printer_cancel').css({'visibility':'visible'});
-				$(this).parent().parent().children('.view_printer_field_update').children('.view_printer_drum_update').css({'visibility':'visible'}).select().blur(function(){
+				$(this).parent().children('.view_printer_field_update').children('.view_printer_name_update').css({'visibility':'visible'}).select().blur(function(){
 					if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
 					if ($(this).val() == $(this).attr('alt')){
 						$(this).css({'visibility':'hidden'});
 						$('#view_printer_update').css({'visibility':'hidden'});
 						$('#view_printer_cancel').css({'visibility':'hidden'});
-						$(this).parent().parent().children('.view_drum_hover').children('.view_printer_drum').css({'visibility':'visible'});
+						$(this).parent().parent().children('.view_printer_name').css({'visibility':'visible'});
 						flags.row[row_id].columns.values[col_id] = $(this).val();
-						flags.row[row_id].columns.bools[col_id] = '0';	
-						getJSON();					
+						flags.row[row_id].columns.bools[col_id] = '0';
+						getJSON();
 					}else{
 						flags.row[row_id].columns.values[col_id] = $(this).val();
-						flags.row[row_id].columns.bools[col_id] = '1';	
-						getJSON();					
+						flags.row[row_id].columns.bools[col_id] = '1';
+						getJSON();
 					}
 				}).click(function(){$(this).select();});
-			}).parent().siblings('.view_printer_ip').click(function(){
+			}).siblings('.view_printer_network').click(function(){
+				var row_id = String($(this).parent().attr('row_id'));
+				var col_id = $(this).attr('id');
+				$(this).css({'visibility':'hidden'});			
+				$('#view_printer_update').css({'visibility':'visible'});
+				$('#view_printer_cancel').css({'visibility':'visible'});
+				$(this).parent().children('.view_printer_field_update').children('.view_printer_network_update').css({'visibility':'visible'}).select().blur(function(){
+					if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
+					if ($(this).val() == $(this).attr('alt')){
+						$(this).css({'visibility':'hidden'});
+						$('#view_printer_update').css({'visibility':'hidden'});
+						$('#view_printer_cancel').css({'visibility':'hidden'});
+						$(this).parent().parent().children('.view_printer_network').css({'visibility':'visible'});
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '0';
+						getJSON();
+					}else{
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '1';
+						getJSON();
+					}
+				}).click(function(){$(this).select();});
+			}).siblings('.view_printer_branch').click(function(){
+				var row_id = String($(this).parent().attr('row_id'));
+				var col_id = $(this).attr('id');
+				$(this).css({'visibility':'hidden'});			
+				$('#view_printer_update').css({'visibility':'visible'});
+				$('#view_printer_cancel').css({'visibility':'visible'});
+				$(this).parent().children('.view_printer_field_update').children('.view_printer_branch_update').css({'visibility':'visible'}).select().blur(function(){
+					if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
+					if ($(this).val() == $(this).attr('alt')){
+						$(this).css({'visibility':'hidden'});
+						$('#view_printer_update').css({'visibility':'hidden'});
+						$('#view_printer_cancel').css({'visibility':'hidden'});
+						$(this).parent().parent().children('.view_printer_branch').css({'visibility':'visible'});
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '0';
+						getJSON();
+					}else{
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '1';
+						getJSON();
+					}
+				}).click(function(){$(this).select();});
+			}).siblings('.view_printer_desk').click(function(){
+				var row_id = String($(this).parent().attr('row_id'));
+				var col_id = $(this).attr('id');
+				$(this).css({'visibility':'hidden'});			
+				$('#view_printer_update').css({'visibility':'visible'});
+				$('#view_printer_cancel').css({'visibility':'visible'});
+				$(this).parent().children('.view_printer_field_update').children('.view_printer_desk_update').css({'visibility':'visible'}).select().blur(function(){
+					if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
+					if ($(this).val() == $(this).attr('alt')){
+						$(this).css({'visibility':'hidden'});
+						$('#view_printer_update').css({'visibility':'hidden'});
+						$('#view_printer_cancel').css({'visibility':'hidden'});
+						$(this).parent().parent().children('.view_printer_desk').css({'visibility':'visible'});
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '0';
+						getJSON();
+					}else{
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '1';
+						getJSON();
+					}
+				}).click(function(){$(this).select();});
+			}).siblings('.view_printer_ip').click(function(){
 				var row_id = $(this).parent().attr('row_id');
 				var col_id = $(this).attr('id');
 				$(this).css({'visibility':'hidden'});
@@ -350,6 +375,72 @@ $(document).ready(function(){
 						getJSON();					
 					}
 				}).click(function(){$(this).select();});			
+			}).siblings('.view_printer_toner_type').click(function(){
+				var row_id = $(this).parent().attr('row_id');
+				var col_id = $(this).attr('id');
+				$(this).css({'visibility':'hidden'});
+				$('#view_printer_update').css({'visibility':'visible'});
+				$('#view_printer_cancel').css({'visibility':'visible'});
+				$(this).parent().children('.view_printer_field_update').children('.view_printer_toner_type_update').css({'visibility':'visible'}).select().blur(function(){
+					if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
+					if ($(this).val() == $(this).attr('alt')){
+						$(this).css({'visibility':'hidden'});
+						$('#view_printer_update').css({'visibility':'hidden'});
+						$('#view_printer_cancel').css({'visibility':'hidden'});
+						$(this).parent().parent().children('.view_printer_toner_type').css({'visibility':'visible'});
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '0';
+						getJSON();
+					}else{
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '1';		
+						getJSON();
+					}
+				}).click(function(){$(this).select();});
+			}).siblings('.view_printer_drum_amount').click(function(){
+				var row_id = $(this).parent().attr('row_id');
+				var col_id = $(this).attr('id');
+				$(this).css({'visibility':'hidden'});
+				$('#view_printer_update').css({'visibility':'visible'});
+				$('#view_printer_cancel').css({'visibility':'visible'});
+				$(this).parent().children('.view_printer_field_update').children('.view_printer_drum_amount_update').css({'visibility':'visible'}).select().blur(function(){
+					if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
+					if ($(this).val() == $(this).attr('alt')){
+						$(this).css({'visibility':'hidden'});
+						$('#view_printer_update').css({'visibility':'hidden'});
+						$('#view_printer_cancel').css({'visibility':'hidden'});
+						$(this).parent().parent().children('.view_printer_drum_amount').css({'visibility':'visible'});
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '0';
+						getJSON();
+					}else{
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '1';
+						getJSON();
+					}
+				}).click(function(){$(this).select();});
+			}).siblings('.view_printer_drum_type').click(function(){
+				var row_id = $(this).parent().attr('row_id');
+				var col_id = $(this).attr('id');
+				$(this).css({'visibility':'hidden'});
+				$('#view_printer_update').css({'visibility':'visible'});
+				$('#view_printer_cancel').css({'visibility':'visible'});
+				$(this).parent().children('.view_printer_field_update').children('.view_printer_drum_type_update').css({'visibility':'visible'}).select().blur(function(){
+					if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
+					if ($(this).val() == $(this).attr('alt')){
+						$(this).css({'visibility':'hidden'});
+						$('#view_printer_update').css({'visibility':'hidden'});
+						$('#view_printer_cancel').css({'visibility':'hidden'});
+						$(this).parent().parent().children('.view_printer_drum_type').css({'visibility':'visible'});
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '0';
+						getJSON();
+					}else{
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '1';
+						getJSON();
+					}
+				}).click(function(){$(this).select();});
 			}).siblings('.view_printer_toner_replaced').click(function(){
 				var row_id = $(this).parent().attr('row_id');
 				var col_id = $(this).attr('id');
@@ -394,8 +485,52 @@ $(document).ready(function(){
 						getJSON();
 					}
 				}).click(function(){$(this).select();});
+			}).siblings('.view_printer_printer_amount').click(function(){
+				var row_id = $(this).parent().attr('row_id');
+				var col_id = $(this).attr('id');
+				$(this).css({'visibility':'hidden'});
+				$('#view_printer_update').css({'visibility':'visible'});
+				$('#view_printer_cancel').css({'visibility':'visible'});
+				$(this).parent().children('.view_printer_field_update').children('.view_printer_printer_amount_update').css({'visibility':'visible'}).select().blur(function(){
+					if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
+					if ($(this).val() == $(this).attr('alt')){
+						$(this).css({'visibility':'hidden'});
+						$('#view_printer_update').css({'visibility':'hidden'});
+						$('#view_printer_cancel').css({'visibility':'hidden'});
+						$(this).parent().parent().children('.view_printer_printer_amount').css({'visibility':'visible'});		
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '0';
+						getJSON();					
+					}else{
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '1';	
+						getJSON();
+					}
+				}).click(function(){$(this).select();});
+			}).siblings('.view_printer_maintenance_date').click(function(){
+				var row_id = $(this).parent().attr('row_id');
+				var col_id = $(this).attr('id');
+				$(this).css({'visibility':'hidden'});
+				$('#view_printer_update').css({'visibility':'visible'});
+				$('#view_printer_cancel').css({'visibility':'visible'});
+				$(this).parent().children('.view_printer_field_update').children('.view_printer_maintenance_date_update').css({'visibility':'visible'}).select().blur(function(){
+					if ($(this).val() == ''){$(this).val($(this).attr('alt'));}
+					if ($(this).val() == $(this).attr('alt')){
+						$(this).css({'visibility':'hidden'});
+						$('#view_printer_update').css({'visibility':'hidden'});
+						$('#view_printer_cancel').css({'visibility':'hidden'});
+						$(this).parent().parent().children('.view_printer_maintenance_date').css({'visibility':'visible'});
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '0';
+						getJSON();					
+					}else{
+						flags.row[row_id].columns.values[col_id] = $(this).val();
+						flags.row[row_id].columns.bools[col_id] = '1';	
+						getJSON();
+					}
+				}).click(function(){$(this).select();});
 			});
-			//$(this).css({'background-color':'#e0f2e8','cursor':'pointer'});// old blue theme, bring it back? Y or N
+			//$(this).css({'background-color':'#e0f2e8','cursor':'pointer'});// old blue theme, bring it back? Y or N: N; Remove this
 			$('.view_printer_options').click(function(){
 				/*
 				 *
@@ -453,33 +588,45 @@ $(document).ready(function(){
 				var update_xml = ''; // set string to be appended
 				for(var i=0;i<=row_cap;i++){
 					if(i in flags.row){
-						// start gathering values for xml
+						// start gathering values for xml; manually looping through this is cumbersome, but will work for now.
 						var col = 0;
 						var row = '<row id="'+flags.row[i].id+'">';
 						var model = '<model><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></model>';
 						col++;
-						var toner = '<toner><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></toner>';
+						var name = '<name><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></name>';
 						col++;
-						var toner_amount = '<toner_amount><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></toner_amount>';
+						var network = '<network><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></network>';
 						col++;
-						var drum = '<drum><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></drum>';
+						var branch = '<branch><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></branch>';
 						col++;
-						var drum_amount = '<drum_amount><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></drum_amount>';
+						var desk = '<desk><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></desk>';
 						col++;
 						var ip = '<ip><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></ip>';
+						col++;
+						var toner_type = '<toner_type><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></toner_type>';
+						col++;
+						var drum_type = '<drum_type><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></drum_type>';
+						col++;						
+						var toner_amount = '<toner_amount><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></toner_amount>';
+						col++;
+						var drum_amount = '<drum_amount><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></drum_amount>';
 						col++;
 						var toner_replaced = '<toner_replaced><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></toner_replaced>';
 						col++;
 						var drum_replaced = '<drum_replaced><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></drum_replaced>';
+						col++;
+						var printer_amount = '<printer_amount><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></printer_amount>';
+						col++;
+						var maintenance_date = '<maintenance_date><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></maintenance_date>';
 						var endRow = '</row>';
-						update_xml = update_xml+row+model+toner+toner_amount+drum+drum_amount+ip+toner_replaced+drum_replaced+endRow;
-						//alert(update_xml);
+						update_xml = update_xml+row+model+name+network+branch+desk+ip+toner_type+drum_type+toner_amount+drum_amount+toner_replaced+drum_replaced+printer_amount+maintenance_date+endRow;
+						alert('update_xml: '+update_xml);
 					}
 				}
 				update_xml = '<xml><rows>'+update_xml+'</rows></xml>'; // encapsulate the row's in properly formatted XML
 				console.log(update_xml);
 				// send to PHP
-				$.post('php/updateXML.php',{update_xml:update_xml,category:category},function(data){//alert(data);
+				$.post('php/updateXML.php',{update_xml:update_xml,category:category},function(data){alert('data: '+data);
 					//alert(data);
 					// it works, so display some shit
 					if(data=='x'){
