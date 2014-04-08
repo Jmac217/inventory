@@ -90,17 +90,20 @@ if (isset($_POST['category'])){
 							if($drum_replaced == '2013-01-01' || $drum_replaced == '0000-00-00'){
 								$drum_replaced = 'N/A';
 							}
-										
+							
+							/* THIS IS BEING DEPRICATED
 							// get toner amount
+							
 							$toner_amount = mysql_fetch_assoc(mysql_query("SELECT amount AS toner_amount FROM toner_amount WHERE model='".$row['toner_amount']."'"));
 							$toner_amount = $toner_amount['toner_amount'];
 							
 							// get drum amount
 							$drum_amount = mysql_fetch_assoc(mysql_query("SELECT amount AS drum_amount FROM drum_amount WHERE model='".$row['drum_amount']."'"));
 							$drum_amount = $drum_amount['drum_amount'];
+							*/
 							
-							// needs logic
-							$printer_amount='3';
+							// needs logic or removed
+							//$printer_amount='3';
 
 							echo "
 								<span class='view_printer_field' style='top:$top' id='$id' row_id='$row_id'><!-- Top is styled in-line dynamically. -->

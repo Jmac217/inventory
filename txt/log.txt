@@ -241,3 +241,21 @@ Updated - printer[id="02"] with drum_replaced="2014-02-02" on 04-08-2014 | 12:59
 Updated - printer[id="02"] with printer_amount="5" on 04-08-2014 | 12:59pm
 Updated - printer[id="02"] with maintenance_date="2014-02-02" on 04-08-2014 | 12:59pm
 Updated - printer[id="02"] with model="1", name="1", network="1", branch="1", desk="1", ip="1", toner_type="1", drum_type="1", toner_replaced="1", drum_replaced="1", printer_amount="1", maintenance_date="1" on 04-08-2014 | 1:02pm
+Updated - printer[id="02"] with drum_type="6" on 04-08-2014 | 3:18pm
+Updated - printer[id="02"] with model="2" on 04-08-2014 | 3:29pm
+Updated - printer[id="02"] with name="2" on 04-08-2014 | 3:30pm
+Updated - printer[id="02"] with network="2" on 04-08-2014 | 3:30pm
+Updated - printer[id="02"] with network="3" on 04-08-2014 | 3:30pm
+Updated - printer[id="02"] with network="3" on 04-08-2014 | 3:31pm
+Updated - printer[id="02"] with desk="2" on 04-08-2014 | 3:31pm
+Updated - printer[id="02"] with name="3" on 04-08-2014 | 3:31pm
+Updated - printer[id="02"] with model="3", name="4", network="4" on 04-08-2014 | 3:31pm
+Updated - printer[id="02"] with ip="2" on 04-08-2014 | 3:31pm
+Updated - printer[id="02"] with toner_type="2" on 04-08-2014 | 3:32pm
+Updated - printer[id="02"] with drum_type="2" on 04-08-2014 | 3:32pm
+Updated - printer[id="02"] with toner_replaced="2014-04-08" on 04-08-2014 | 3:32pm
+Updated - printer[id="02"] with drum_replaced="2014-04-08" on 04-08-2014 | 3:32pm
+Updated - printer[id="02"] with printer_amount="2" on 04-08-2014 | 3:33pm
+Updated - printer[id="02"] with maintenance_date="2014-04-08" on 04-08-2014 | 3:33pm
+Updated - printer[id="02"] with branch="2" on 04-08-2014 | 3:42pm
+Updated - printer[id="02"] with desk="3" on 04-08-2014 | 3:42pm

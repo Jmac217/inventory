@@ -620,13 +620,13 @@ $(document).ready(function(){
 						var maintenance_date = '<maintenance_date><value>'+flags.row[i].columns.values[col]+'</value><bool>'+flags.row[i].columns.bools[col]+'</bool></maintenance_date>';
 						var endRow = '</row>';
 						update_xml = update_xml+row+model+name+network+branch+desk+ip+toner_type+drum_type+toner_amount+drum_amount+toner_replaced+drum_replaced+printer_amount+maintenance_date+endRow;
-						alert('update_xml: '+update_xml);
+						/*alert('update_xml: '+update_xml);*/
 					}
 				}
 				update_xml = '<xml><rows>'+update_xml+'</rows></xml>'; // encapsulate the row's in properly formatted XML
 				console.log(update_xml);
 				// send to PHP
-				$.post('php/updateXML.php',{update_xml:update_xml,category:category},function(data){alert('data: '+data);
+				$.post('php/updateXML.php',{update_xml:update_xml,category:category},function(data){/*alert('data: '+data);*/
 					//alert(data);
 					// it works, so display some shit
 					if(data=='x'){
