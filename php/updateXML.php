@@ -62,15 +62,15 @@ if (isset($_POST['update_xml'])){
 				$ip_bool = $row->ip->bool; // get this ip bool
 				$desk_bool = $row->desk->bool; // get this desk bool
 				$toner_type_bool = $row->toner_type->bool; // get this toner_type bool
-				$toner_amount_bool = $row->toner_amount->bool; // get this toner_amount bool
 				$drum_type_bool = $row->drum_type->bool; // get this drum_type bool
+				$toner_amount_bool = $row->toner_amount->bool; // get this toner_amount bool
 				$drum_amount_bool = $row->drum_amount->bool; // get this drum_amount bool
 				$toner_replaced_bool = $row->toner_replaced->bool; // get this toner_replaced
 				$drum_replaced_bool = $row->drum_replaced->bool; // get this drum_replaced
 				$printer_amount_bool = $row->printer_amount->bool; // get this printer_amount bool
 				$maintenance_date_bool = $row->maintenance_date->bool; // get this maintenance_date bool
 
-				$debug = $id.': '.$model_value.' => '.$model_bool.', '.$name_value.' => '.$name_bool.', '.$network_value.' => '.$network_bool.', '.$branch_value.' => '.$branch_bool.', '.$desk_value.' => '.$desk_bool.', '.$ip_value.' => '.$ip_bool.', '.$toner_type_value.' => '.$toner_type_bool.', '.$drum_type_value.' => '.$drum_type_bool.', '.$toner_replaced_value.' => '.$toner_replaced_bool.', '.$drum_replaced_value.' => '.$drum_replaced_bool.', '.$printer_amount_value.' => '.$printer_amount_bool.', '.$maintenance_date_value.' => '.$maintenance_date_bool.'<br />';
+				//echo $debug = $id.': '.$model_value.' => '.$model_bool.', '.$name_value.' => '.$name_bool.', '.$network_value.' => '.$network_bool.', '.$branch_value.' => '.$branch_bool.', '.$desk_value.' => '.$desk_bool.', '.$ip_value.' => '.$ip_bool.', '.$toner_type_value.' => '.$toner_type_bool.', '.$drum_type_value.' => '.$drum_type_bool.', '.$toner_amount_value.' => '.$toner_amount_bool.', '.$drum_amount_value.' => '.$drum_amount_bool.', '.$toner_replaced_value.' => '.$toner_replaced_bool.', '.$drum_replaced_value.' => '.$drum_replaced_bool.', '.$printer_amount_value.' => '.$printer_amount_bool.', '.$maintenance_date_value.' => '.$maintenance_date_bool.'<br />';
 
 				// update this database row with these values
 				
@@ -128,7 +128,6 @@ if (isset($_POST['update_xml'])){
 					$maintenance_date = 'maintenance_date="'.$maintenance_date_value.'"';
 				}else{$maintenance_date = NULL;}
 
-				
 				// dynamically set up another query string for amounts
 				
 				// DEBUG
@@ -218,7 +217,7 @@ if (isset($_POST['update_xml'])){
 							$printer_amount .= ', ';
 						}
 					}
-					$query = 'UPDATE printer SET '.$model.$name.$network.$branch.$desk.$ip.$toner_type.$drum_type.$toner_replaced.$drum_replaced.$printer_amount.$maintenance_date.' WHERE id="'.$id.'"';
+					$query = 'UPDATE printer SET '.$model.$name.$network.$branch.$desk.$ip.$toner_type.$drum_type.$toner_amount.$drum_amount.$toner_replaced.$drum_replaced.$printer_amount.$maintenance_date.' WHERE id="'.$id.'"';
 					mysql_query($query)or die(mysql_error());
 					
 					// Write Log

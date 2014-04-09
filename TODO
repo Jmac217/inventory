@@ -11,10 +11,14 @@
 	Values are still sticky when selecting Add, to change this, divs only need to be declared hidden.
 	The update fields need resized.
 	The footer is still misaligned.
+	Does it matter that dates are not selectors here?
+	Footers can more-than-likely be combined, however they will remain separated for now
 
 [Add]
 
-	Fields are squashed together.
+	Field position relativity is going to be a problem soon: those dimensions are mostly correct at so just figure their pixel density.
+	'maintenance_date' will need to be turned into a date selector eventually. This will affect: add.php -> add.js -> uploadXML.php
+	date selectors should be made into class based functions
 
 [Bugs]
 

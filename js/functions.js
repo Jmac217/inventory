@@ -12,7 +12,7 @@ function add(){
 	$.ajax({
 		type:'POST',
 		data:{category:category},
-		url:'add_pages.php',
+		url:'add.php',
 		async:'true',
 		success: function(data){
 			$('#add').html(data).css({'visibility':'visible'});	

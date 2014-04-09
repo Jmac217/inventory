@@ -195,7 +195,7 @@ $(document).ready(function(){
 			// calling this function here is only viable when the ajax calls -> async is set to false.
 			getJSON();
 			
-			var willBeUpdated = 0; // This guy still needs implementation, do I even need this?
+			var willBeUpdated = 0; // This guy still needs implementation, do I even need this? Isn't this what the booleans do?
 			
 
 
@@ -627,15 +627,15 @@ $(document).ready(function(){
 				console.log(update_xml);
 				// send to PHP
 				$.post('php/updateXML.php',{update_xml:update_xml,category:category},function(data){/*alert('data: '+data);*/
-					//alert(data);
+					// alert(data);
 					// it works, so display some shit
 					if(data=='x'){
 						// display failure
 						// check log needs to be added here once HTML view is set up
-						$('#view_printer_feedback').show().html('Update has Failed').css({'color':'red'}).fadeOut(1800);
+						$('#view_printer_feedback').show().html('Update has Failed').css({'color':'#F77'}).fadeOut(1800);
 					}else{
 						// display Success inside of the feedback div
-						$('#view_printer_feedback').show().html('Update was Successful').css({'color':'green'}).fadeOut(1800);
+						$('#view_printer_feedback').show().html('Update was Successful').css({'color':'#7F7'}).fadeOut(1800);
 						$('#view_printer_list').load('php/view_printer_list.php');
 					}
 				});

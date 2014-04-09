@@ -259,3 +259,10 @@ Updated - printer[id="02"] with printer_amount="2" on 04-08-2014 | 3:33pm
 Updated - printer[id="02"] with maintenance_date="2014-04-08" on 04-08-2014 | 3:33pm
 Updated - printer[id="02"] with branch="2" on 04-08-2014 | 3:42pm
 Updated - printer[id="02"] with desk="3" on 04-08-2014 | 3:42pm
+Updated - printer[id="02"] with  on 04-09-2014 | 9:12am
+Updated - printer[id="02"] with  on 04-09-2014 | 10:32am
+Updated - printer[id="02"] with  on 04-09-2014 | 10:33am
+Updated - printer[id="02"] with  on 04-09-2014 | 10:34am
+Updated - printer[id="02"] with  on 04-09-2014 | 10:36am
+Updated - printer[id="02"] with  on 04-09-2014 | 10:37am
+Updated - printer[id="02"] with  on 04-09-2014 | 10:37am

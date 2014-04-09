@@ -62,8 +62,8 @@
 
 	<div id='body'>
 		<div id='loading_tab'></div>
-		<div id='add'>
 		<div id='add_window'></div>
+		<div id='add'>
 			<?php include 'add.php'; ?>
 		</div>
 		<div id='view'></div>
