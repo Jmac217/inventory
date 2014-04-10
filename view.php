@@ -63,11 +63,11 @@ if (isset($_POST['category'])){
 								<span id='view_printer_category_ip'>IP</span>
 								<span id='view_printer_category_toner_type'>Toner</span>
 								<span id='view_printer_category_drum_type'>Drum</span>
-								<span id='view_printer_category_toner_amount'>Toner Amount</span>
-								<span id='view_printer_category_drum_amount'>Drum Amount</span>
+								<span id='view_printer_category_toner_amount'>T Amt</span>
+								<span id='view_printer_category_drum_amount'>D Amt</span>
 								<span id='view_printer_category_toner_replaced'>Toner Replaced</span>
 								<span id='view_printer_category_drum_replaced'>Drum Replaced</span>
-								<span id='view_printer_category_printer_amount'>Printer Amount</span>								
+								<span id='view_printer_category_printer_amount'>P Amt</span>								
 								<span id='view_printer_category_maintenance_date'>Maintenance Date</span>
 							</span>
 							<div class='view_field_container'>

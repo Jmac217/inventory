@@ -266,3 +266,10 @@ Updated - printer[id="02"] with  on 04-09-2014 | 10:34am
 Updated - printer[id="02"] with  on 04-09-2014 | 10:36am
 Updated - printer[id="02"] with  on 04-09-2014 | 10:37am
 Updated - printer[id="02"] with  on 04-09-2014 | 10:37am
+Updated - printer[id="01"] with branch="Murphysboro" on 04-10-2014 | 8:41am
+Updated - printer[id="01"] with branch="Carterville" on 04-10-2014 | 8:41am
+Updated - printer[id="02"] with  on 04-10-2014 | 10:39am
+Removed - printer[id="02"] with Model="3", Toner="", Drum="", IP="2", Toner Replaced="2014-04-08", and Drum Replaced="2014-04-08" on this date and time: 04-10-2014 | 12:00pm
+Added - printer[id="03"] with Model="Kyocera", Name="IS_K1920", Network="DC03", Branch="Carbondale", Desk="IS", IP="10.0.0.90", Toner_Type="K1920", Drum_Type="K1920", Toner_amount="", Drum_Amount="", Toner_Replaced="undefined-undefined-undefined", Drum_Replaced="undefined-undefined-undefined", Printer_Amount="1", Maintenance_Date="undefined-undefined-undefined" on this date and time: 04-10-2014 | 12:03pm
+Updated - printer[id="03"] with toner_replaced="2013-11-10", drum_replaced="2013-11-10", maintenance_date="2013-11-10" on 04-10-2014 | 12:04pm
+Updated - printer[id="03"] with toner_replaced="2013-11-10", drum_replaced="2013-11-10", maintenance_date="2013-11-10" on 04-10-2014 | 12:04pm
