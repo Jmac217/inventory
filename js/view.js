@@ -196,8 +196,6 @@ $(document).ready(function(){
 			getJSON();
 			
 			var willBeUpdated = 0; // This guy still needs implementation, do I even need this? Isn't this what the booleans do?
-			
-
 
 			// dropdown hover and delete functions - these are all crazy and relative... "Don't hate; subscriptiate!" - BlumGum himself
 			$('.view_printer_field').mouseenter(function(){ // field -> update -> model

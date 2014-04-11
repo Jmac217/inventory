@@ -13,6 +13,7 @@
 	The footer is still misaligned.
 	Does it matter that dates are not selectors here?
 	Footers can more-than-likely be combined, however they will remain separated for now
+	An edited field becomes 'visible', and with how CSS works a child, that is given its own visibility, cannot be changed by the parent, or so it would seem
 
 [Add]
 
@@ -20,11 +21,14 @@
 	'maintenance_date' will need to be turned into a date selector eventually. This will affect: add.php -> add.js -> uploadXML.php
 	date selectors should be made into class based functions
 	There seems to be a new problem with the dates being added. This probably has something to do with the change in scope. I just realized it hadn't been tested since it was changed.
+	`Amount` Fields need to have 'feedback', be set at 0, and use the same functionality as the `field_number` selection for up and down arrow key increments and decrements.
 
 [General CSS]
 	
+	Relativity will need to go very soon. (Should there be a separate sheet for relativity? - Would that even work in smaller resolutions than 16x9)
 	All of those hover things that do the same thing should be condensed into a single class obviously.
 	Seems like headers and footers could be separated into add and view classes too, but that will need more consideration. That will surely involve functions and things, which I'm still a ways off from revising.
+	Swapping quickly between views, view->add, will load view.php into add despite visibility of view. Things are just a little janky with these views.
 
 [Bugs]
 

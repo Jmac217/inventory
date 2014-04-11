@@ -146,10 +146,17 @@ $('.title_drop_field').mouseenter(function(){
 			}
 		}
 	});
+	/* This has been set into /php/known_issues.php because of load issues, and modularity. */
+  /*
+	$('#list_known_issues').click(function(){
+		$('#known_issues').css({'visibility':'visible'});
+		$('#known_issues_return').css({'visibility':'visible'});
+	});
 
 	$('#known_issues_return').click(function(){
 		$(this).css({'visibility':'hidden'});
 		$('#known_issues').css({'visibility':'hidden'});
 	});
+	*/
 
 });

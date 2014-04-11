@@ -82,6 +82,5 @@
 </div>
 <!--<span id='author'><span id='author_name'></span></span>-->
 <script type='text/javascript' src='js/functions.js'></script>
-<script type='text/javascript' src='js/index.js'></script>
 </body>
 </html>
