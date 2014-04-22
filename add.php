@@ -342,7 +342,7 @@ if (!isset($_POST['category'])||strtolower($_POST['category'])=='printer'){
 						</div>
 					</div>
 				</div>
-				<!-- End Paper -->
+				<!-- End Workstation -->
 				";
 			break;
 			
@@ -424,7 +424,7 @@ if (!isset($_POST['category'])||strtolower($_POST['category'])=='printer'){
 						</div>
 					</div>
 				</div>
-				<!-- End Paper -->
+				<!-- End Server -->
 				";
 			break;
 
@@ -503,7 +503,7 @@ if (!isset($_POST['category'])||strtolower($_POST['category'])=='printer'){
 						</div>
 					</div>
 				</div>
-				<!-- End Paper -->
+				<!-- End Accessory -->
 				";
 			break;
 		

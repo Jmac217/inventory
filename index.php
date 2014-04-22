@@ -19,8 +19,6 @@
 <!-- It should be possible to actually change this filetype to HTML after a while -->
 <head>
 <link rel='stylesheet' type='text/css' href='css/index.css' />
-<!--<link rel='stylesheet' type='text/css' href='css/headers.css' />-->
-<link rel='stylesheet' type='text/css' href='css/pages.css' />
 <link rel='shortcut icon' href='res/picon.png' />
 <script type='text/javascript' src='js/jquery.js'></script>
 <title>Inventory System</title>

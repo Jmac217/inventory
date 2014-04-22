@@ -14,8 +14,11 @@
 	Does it matter that dates are not selectors here?
 	Footers can more-than-likely be combined, however they will remain separated for now
 	An edited field becomes 'visible', and with how CSS works a child, that is given its own visibility, cannot be changed by the parent, or so it would seem
+	Add logic for when an 'amount' is changed for update to check the database for others of the same amount and change them too; this might be inefficient, but hell I guess I could always figure out another way- besides the separated SQL databases: maybe with JSON values to be added and updated similarly to the SQL instance. That would also give me a reason to finally start working on alternative databases.
 
 [Add]
+
+	Add.php switches could be loaded in as XML in a page-per-page setup under something like "/XML/pages". I really like this idea: it would entail a slight rework of the way pages are handled, but it would make things very helpful later for importing and exporting. I'm adding a mockup to /XML/pages.xml.txt
 
 	Field position relativity is going to be a problem soon: those dimensions are mostly correct at so just figure their pixel density.
 	'maintenance_date' will need to be turned into a date selector eventually. This will affect: add.php -> add.js -> uploadXML.php
@@ -24,6 +27,9 @@
 	`Amount` Fields need to have 'feedback', be set at 0, and use the same functionality as the `field_number` selection for up and down arrow key increments and decrements.
 
 [General CSS]
+
+	Resize 'page' dimensions and refit footers into place.
+	Make sure visibilities are all working correctly.
 	
 	Relativity will need to go very soon. (Should there be a separate sheet for relativity? - Would that even work in smaller resolutions than 16x9)
 	All of those hover things that do the same thing should be condensed into a single class obviously.
@@ -39,14 +45,17 @@
 		selecting a dropdown field does not remove current view field. Maybe as simple as adding a css hidden.
 		search needs to be disabled for now. It throws things off and is outdated.
 		assets are still in need of an update.
-		"omittedFields" will be a global variable - so right now it can stay hard-coded at a value of 2.
+		"omittedFields" will be a global variable which can be set per category - but right now it can stay hard-coded at a value of 2.
 		"headerSetter.php" is still being used to reset tabs on category selection, but the javascript version still exists in its broken state - it's just commented out. This will be used to replace the PHP eventually.
 		
-	Aesthetics
+[Fixes]
 
-		try and rework the width of the body at some point.
-		figure out if the line between view and the footer is going or staying.
-		Set up outline for the settings panel and figure out its location.
-		make non-labeled fields clickable.
-		get a jquery scrollbar in here.
-		make drop-down scrollable for lengthy applications.
+	Version.php is being reloaded with ever page, which is unnecessary; this mostly has to do with the footer revolving too, which is also unnecessary and very clunky.
+		
+[Aesthetics]
+
+	Set up outline for the settings panel and figure out its location.
+	make blank update_view fields clickable.
+	get a jquery scrollbar in here.
+	make drop-down scrollable for lengthy applications.
+	add a backdrop to the scrollbar [top,bottom,horizontal-fill] which allows for scalable scrolling. At some point I guess the entirety of the stylesheet could be broken down like this; it's not hard to cut a plane into pieces.
