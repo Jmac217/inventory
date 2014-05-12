@@ -18,9 +18,9 @@
 <html>
 <!-- It should be possible to actually change this filetype to HTML after a while -->
 <head>
-<link rel='stylesheet' type='text/css' href='css/index.css' />
+<link rel='stylesheet' href='css/index.css' />
 <link rel='shortcut icon' href='res/picon.png' />
-<script type='text/javascript' src='js/jquery.js'></script>
+<script src='js/jquery.js'></script>
 <title>Inventory System</title>
 </head>
 <body>
@@ -79,6 +79,6 @@
 	-->
 </div>
 <!--<span id='author'><span id='author_name'></span></span>-->
-<script type='text/javascript' src='js/functions.js'></script>
+<script src='js/functions.js'></script>
 </body>
 </html>
