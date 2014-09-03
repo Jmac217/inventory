@@ -87,7 +87,7 @@ set window=59
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd C:\xampp\htdocs\Jmac217\inventory\new-filesystem
+cd C:\xampp\htdocs\Jmac217\inventory
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -295,7 +295,7 @@ normal! 0
 lcd C:\xampp\htdocs
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\css\index.css
+edit C:\xampp\htdocs\Jmac217\inventory\css\index.css
 setlocal keymap=
 setlocal noarabic
 setlocal autoindent
@@ -388,7 +388,7 @@ if &syntax != 'css'
 setlocal syntax=css
 endif
 setlocal tabstop=2
-setlocal tags=C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/css.tags,C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/tags,./tags,tags
+setlocal tags=C:/xampp/htdocs/Jmac217/inventory/.git/css.tags,C:/xampp/htdocs/Jmac217/inventory/.git/tags,./tags,tags
 setlocal textwidth=0
 setlocal thesaurus=
 setlocal noundofile
@@ -411,7 +411,7 @@ else
 endif
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\index.php
+edit C:\xampp\htdocs\Jmac217\inventory\index.php
 onoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 nnoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 onoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
@@ -508,7 +508,7 @@ if &syntax != 'php'
 setlocal syntax=php
 endif
 setlocal tabstop=2
-setlocal tags=C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/php.tags,C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/tags,./tags,tags
+setlocal tags=C:/xampp/htdocs/Jmac217/inventory/.git/php.tags,C:/xampp/htdocs/Jmac217/inventory/.git/tags,./tags,tags
 setlocal textwidth=0
 setlocal thesaurus=
 setlocal noundofile
@@ -526,7 +526,7 @@ normal! zt
 normal! 0
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\php\updateXML.php
+edit C:\xampp\htdocs\Jmac217\inventory\php\updateXML.php
 onoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 nnoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 onoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
@@ -623,7 +623,7 @@ if &syntax != 'php'
 setlocal syntax=php
 endif
 setlocal tabstop=2
-setlocal tags=C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/php.tags,C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/tags,./tags,tags
+setlocal tags=C:/xampp/htdocs/Jmac217/inventory/.git/php.tags,C:/xampp/htdocs/Jmac217/inventory/.git/tags,./tags,tags
 setlocal textwidth=0
 setlocal thesaurus=
 setlocal noundofile
@@ -641,7 +641,7 @@ normal! zt
 normal! 0
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\php\uploadXML.php
+edit C:\xampp\htdocs\Jmac217\inventory\php\uploadXML.php
 onoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 nnoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 onoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
@@ -738,7 +738,7 @@ if &syntax != 'php'
 setlocal syntax=php
 endif
 setlocal tabstop=2
-setlocal tags=C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/php.tags,C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/tags,./tags,tags
+setlocal tags=C:/xampp/htdocs/Jmac217/inventory/.git/php.tags,C:/xampp/htdocs/Jmac217/inventory/.git/tags,./tags,tags
 setlocal textwidth=0
 setlocal thesaurus=
 setlocal noundofile
@@ -756,7 +756,7 @@ normal! zt
 normal! 02|
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\js\functions.js
+edit C:\xampp\htdocs\Jmac217\inventory\js\functions.js
 setlocal keymap=
 setlocal noarabic
 setlocal autoindent
@@ -849,7 +849,7 @@ if &syntax != 'javascript'
 setlocal syntax=javascript
 endif
 setlocal tabstop=2
-setlocal tags=C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/javascript.tags,C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/tags,./tags,tags
+setlocal tags=C:/xampp/htdocs/Jmac217/inventory/.git/javascript.tags,C:/xampp/htdocs/Jmac217/inventory/.git/tags,./tags,tags
 setlocal textwidth=0
 setlocal thesaurus=
 setlocal noundofile
@@ -867,7 +867,7 @@ normal! zt
 normal! 028|
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\php\headerSetter.php
+edit C:\xampp\htdocs\Jmac217\inventory\php\headerSetter.php
 onoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 nnoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 onoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
@@ -982,7 +982,7 @@ normal! zt
 normal! 037|
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\README
+edit C:\xampp\htdocs\Jmac217\inventory\README
 setlocal keymap=
 setlocal noarabic
 setlocal autoindent
@@ -1093,7 +1093,7 @@ normal! zt
 normal! 037|
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\TODO
+edit C:\xampp\htdocs\Jmac217\inventory\TODO
 setlocal keymap=
 setlocal noarabic
 setlocal autoindent
@@ -1186,7 +1186,7 @@ if &syntax != ''
 setlocal syntax=
 endif
 setlocal tabstop=2
-setlocal tags=C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/tags,./tags,tags
+setlocal tags=C:/xampp/htdocs/Jmac217/inventory/.git/tags,./tags,tags
 setlocal textwidth=0
 setlocal thesaurus=
 setlocal noundofile
@@ -1204,7 +1204,7 @@ normal! zt
 normal! 03|
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\view.php
+edit C:\xampp\htdocs\Jmac217\inventory\view.php
 onoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 nnoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 onoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
@@ -1319,7 +1319,7 @@ normal! zt
 normal! 059|
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\add.php
+edit C:\xampp\htdocs\Jmac217\inventory\add.php
 onoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 nnoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
 onoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
@@ -1416,7 +1416,7 @@ if &syntax != 'php'
 setlocal syntax=php
 endif
 setlocal tabstop=2
-setlocal tags=C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/php.tags,C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/tags,./tags,tags
+setlocal tags=C:/xampp/htdocs/Jmac217/inventory/.git/php.tags,C:/xampp/htdocs/Jmac217/inventory/.git/tags,./tags,tags
 setlocal textwidth=0
 setlocal thesaurus=
 setlocal noundofile
@@ -1434,7 +1434,7 @@ normal! zt
 normal! 0
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\js\view.js
+edit C:\xampp\htdocs\Jmac217\inventory\js\view.js
 setlocal keymap=
 setlocal noarabic
 setlocal autoindent
@@ -1545,7 +1545,7 @@ normal! zt
 normal! 09|
 wincmd w
 argglobal
-edit C:\xampp\htdocs\Jmac217\inventory\new-filesystem\js\add.js
+edit C:\xampp\htdocs\Jmac217\inventory\js\add.js
 setlocal keymap=
 setlocal noarabic
 setlocal autoindent
@@ -1638,7 +1638,7 @@ if &syntax != 'javascript'
 setlocal syntax=javascript
 endif
 setlocal tabstop=2
-setlocal tags=C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/javascript.tags,C:/xampp/htdocs/Jmac217/inventory/new-filesystem/.git/tags,./tags,tags
+setlocal tags=C:/xampp/htdocs/Jmac217/inventory/.git/javascript.tags,C:/xampp/htdocs/Jmac217/inventory/.git/tags,./tags,tags
 setlocal textwidth=0
 setlocal thesaurus=
 setlocal noundofile
@@ -1696,3 +1696,4 @@ let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
+let @/=''

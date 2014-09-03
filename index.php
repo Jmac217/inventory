@@ -1,5 +1,8 @@
 <!--******************************************************
 
+    Inventory Database: A generic database designed for simplicity
+    Copyright (C) 2014 Jordan Elder
+	
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or

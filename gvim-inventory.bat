@@ -1,1 +1,1 @@
-gvim -S C:\xampp\htdocs\Jmac217\inventory\new-filesystem\inventory.vim
+gvim -S C:\xampp\htdocs\Jmac217\inventory\inventory.vim
