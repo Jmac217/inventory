@@ -1,0 +1,7 @@
+Resources are all in /res
+
+Dimensions | 16x9 is what I'd like to go for, but defaults would probably be better off with 1280x768. Damn this is why I went relative to begin with...
+
+[Global]
+Height: 100%
+Width: 100%

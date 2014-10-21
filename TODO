@@ -38,16 +38,14 @@
 
 [Bugs]
 
-	A few things to note going in
-
-		update fields are out of whack, those will be aligned with the columns...
-		omitted fields in databases are untrackable. The default being used is 2 - set in php/getRows.php. I'm almost certain it doesn't matter if the bool field is longer than the number of values.
-		selecting a dropdown field does not remove current view field. Maybe as simple as adding a css hidden.
-		search needs to be disabled for now. It throws things off and is outdated.
-		assets are still in need of an update.
-		"omittedFields" will be a global variable which can be set per category - but right now it can stay hard-coded at a value of 2.
-		"headerSetter.php" is still being used to reset tabs on category selection, but the javascript version still exists in its broken state - it's just commented out. This will be used to replace the PHP eventually.
-		
+	update fields are out of whack, those will be aligned with the columns...
+	omitted fields in databases are untrackable. The default being used is 2 - set in php/getRows.php. I'm almost certain it doesn't matter if the bool field is longer than the number of values.
+	selecting a dropdown field does not remove current view field. Maybe as simple as adding a css hidden.
+	search needs to be disabled for now. It throws things off and is outdated.
+	assets are still in need of an update.
+	"omittedFields" will be a global variable which can be set per category - but right now it can stay hard-coded at a value of 2.
+	"headerSetter.php" is still being used to reset tabs on category selection, but the javascript version still exists in its broken state - it's just commented out. This will be used to replace the PHP eventually.
+	
 [Fixes]
 
 	Version.php is being reloaded with ever page, which is unnecessary; this mostly has to do with the footer revolving too, which is also unnecessary and very clunky.
